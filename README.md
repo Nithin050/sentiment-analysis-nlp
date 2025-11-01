@@ -1,56 +1,70 @@
-Flipkart Product Review Sentiment Analysis
+# Flipkart Product Review Sentiment Analysis using NLP & Machine Learning
 
-This project analyzes customer reviews from Flipkart to determine sentiment based on product ratings using Natural Language Processing (NLP) and Machine Learning. The primary model used is RandomForestClassifier.
+## Overview
+This project analyzes **Flipkart customer reviews** to classify sentiments (positive, neutral, or negative) based on product ratings using **Natural Language Processing (NLP)** and **Machine Learning**.  
+It demonstrates a complete **end-to-end ML pipeline** — from data cleaning and text preprocessing to feature extraction (TF-IDF) and model training using **Random Forest Classifier**.
 
-Overview:-
-Goal: Predict sentiment (based on ratings) from customer reviews.
-Dataset:- flipkart_reviews.csv
-Technique:- Text Cleaning, TF-IDF, and Random Forest Classification
+---
 
+## Objective
+To predict customer sentiment from textual product reviews and gain insights into how customers perceive Flipkart products.
 
-Steps Performed:-
+---
 
-1. Data Loading: Uploading CSV and reading using pandas.
-2. Data Cleaning:
-   - Dropping nulls
-   - Type checking and EDA
-3. Exploratory Data Analysis (EDA):
-   - Rating distribution
-   - Word count visualization
-4. Text Preprocessing:
-   - Tokenization
-   - Lemmatization
-   - Stopword removal
-5. Feature Engineering:
-   - TF-IDF vectorization
-6. Model Building:
-   - Using RandomForestClassifier
-7. Evaluation:
-   - Accuracy Score
-   - Classification Report
-   - Confusion Matrix
+## Technologies & Libraries Used
+- **Python**
+- **pandas**, **numpy** – Data cleaning and analysis  
+- **matplotlib**, **seaborn** – Data visualization  
+- **nltk**, **re** – Text preprocessing (tokenization, stopword removal, lemmatization)  
+- **scikit-learn** – TF-IDF vectorization and RandomForestClassifier  
+- **Google Colab** – Development environment  
 
+---
 
-Accuracy Achieved:-
-Accuracy: ~83% on test data
+## Dataset
+- **Source:** Flipkart product reviews dataset (`flipkart_reviews.csv`)  
+- **Features:** Review text, Product name, Rating, etc.  
+- **Target:** Sentiment (derived from rating)
 
-Steps to Run:-
-1. Upload your dataset named flipkart_reviews.csv.
-2. Run each code block step-by-step on https://colab.research.google.com.
-3. Final model output will show accuracy, confusion matrix, and classification report.
+---
 
-Files in the Repo:-
-- sentiment_analysis.ipynb – Colab notebook with full pipeline
-- flipkart_reviews.csv – Dataset
-- README.md – Project overview
+## 🔍 Project Workflow
+1. **Data Loading:** Load and explore the dataset using pandas.  
+2. **Data Cleaning:** Handle missing values, drop duplicates, and format data types.  
+3. **Exploratory Data Analysis (EDA):**
+   - Distribution of product ratings  
+   - Word count and frequent words visualization  
+4. **Text Preprocessing:**
+   - Tokenization  
+   - Lemmatization  
+   - Stopword removal  
+5. **Feature Engineering:**
+   - TF-IDF Vectorization of text data  
+6. **Model Building:**
+   - **RandomForestClassifier** for sentiment prediction  
+7. **Model Evaluation:**
+   - Accuracy Score  
+   - Confusion Matrix  
+   - Classification Report  
 
+---
 
-GitHub & Colab Links:-
-- GitHub Repo: https://github.com/Nithin050/sentiment-analysis-nlp
+##  Results
+ **Accuracy:** ~83% on test data  
+ Good balance between precision and recall across sentiment classes  
+ Clear visualizations of positive and negative term frequency  
 
+---
 
-Author:-
-Nithin Nair 
-Aspiring AI/ML Developer | Final Year BSc CS  
-https://github.com/Nithin050/sentiment-analysis-nlp
-nithin.2005nair@gmail.com
+## How to Run
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/Nithin050/sentiment-analysis-nlp.git
+   cd sentiment-analysis-nlp
+   ```
+
+2. **Open in Google Colab → https://colab.research.google.com**
+
+3. **Upload the dataset flipkart_reviews.csv**
+
+4. **Run all cells in the notebook sent_analysis_prodRev.ipynb**
