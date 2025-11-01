@@ -28,7 +28,7 @@ To predict customer sentiment from textual product reviews and gain insights int
 
 ---
 
-## 🔍 Project Workflow
+## Project Workflow
 1. **Data Loading:** Load and explore the dataset using pandas.  
 2. **Data Cleaning:** Handle missing values, drop duplicates, and format data types.  
 3. **Exploratory Data Analysis (EDA):**
